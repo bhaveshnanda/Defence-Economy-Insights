@@ -1,0 +1,119 @@
+.section {
+  position: relative;
+  background-image: url("Defence-policy.jpg"); /* Replace with your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Dark overlay for better text visibility */
+.section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* Heading on top */
+.heading {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 44px;
+  /* margin-bottom: 25px; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Animated paragraph + columns */
+.textContainer {
+  position: relative;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  max-width: 1450px;
+  width: 100%;
+}
+
+.textContainer.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.textContainer p {
+  color: #f0f0f0;
+  font-size: 18px;
+  margin: 0 auto 40px;
+}
+
+/* === Two-column layout === */
+.columns {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+/* Left Column (Image Side) */
+.leftColumn {
+  flex: 1 1 55%; /* Smaller width */
+  display: flex;
+  justify-content: center;
+}
+
+/* Optional image styling */
+/* .sideImage {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+} */
+
+/* Right Column (Text Side) */
+.rightColumn {
+  flex: 1 1 40%; /* Takes 70% width */
+  text-align: left;
+}
+
+.rightColumn p {
+  color: white;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 900px) {
+  .heading {
+    font-size: 32px;
+  }
+
+  .columns {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .rightColumn p {
+    font-size: 18px;
+  }
+}
