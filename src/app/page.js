@@ -26,7 +26,7 @@ export default function HomePage() {
 
   return (
     <div className={styles.homeContainer}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Masthead />
       <DefencePolicy />
       <FutureOf />

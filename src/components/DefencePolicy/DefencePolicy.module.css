@@ -1,6 +1,6 @@
 .section {
   position: relative;
-  background-image: url("Defence-policy.jpg"); /* Replace with your image */
+  background-image: url("../../../public/images/Map.jpg"); /* Replace with your image */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,11 +67,11 @@
 }
 
 /* Left Column (Image Side) */
-.leftColumn {
-  flex: 1 1 55%; /* Smaller width */
+/* .leftColumn {
+  flex: 1 1 55%;
   display: flex;
   justify-content: center;
-}
+} */
 
 /* Optional image styling */
 /* .sideImage {
@@ -83,16 +83,18 @@
 } */
 
 /* Right Column (Text Side) */
-.rightColumn {
-  flex: 1 1 40%; /* Takes 70% width */
-  text-align: left;
-}
+/* .rightColumn { */
+  /* flex: 1 1 40%; */
+  /* text-align: left; */
+/* } */
 
 .rightColumn p {
   color: white;
-  font-size: 22px;
+  font-size: 24px;
+  font-weight: 500;
   line-height: 1.6;
   margin-bottom: 18px;
+  text-align: center;
 }
 
 /* === Responsive Design === */

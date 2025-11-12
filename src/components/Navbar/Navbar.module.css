@@ -1,13 +1,17 @@
 .navbar {
-  background-color: #002b5c;
-  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white; /* adjust to contrast the banner */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 40px;
-  position: sticky;
-  top: 0;
   z-index: 1000;
+  background: rgba(0, 0, 0, 0.2); /* light transparent overlay */
+  backdrop-filter: blur(6px); /* optional nice glass effect */
+  transition: background 0.3s ease;
 }
 
 .logo {
@@ -16,17 +20,25 @@
   letter-spacing: 1px;
 }
 
+.logoImage {
+  height: 70px;       /* Adjust height as needed */
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
 /* Desktop nav */
 .navLinks {
   display: flex;
-  gap: 25px;
+  gap: 35px;
   list-style: none;
 }
 
 .navLinks a {
   text-decoration: none;
-  color: white;
-  font-size: 16px;
+  color:white;
+  font-size: 20px;
+  font-weight: 600;
   transition: color 0.3s ease;
 }
 
@@ -66,6 +78,10 @@
     display: flex;
   }
 
+  .logoImage {
+    height: 40px;
+  }
+
   .navLinks {
     position: absolute;
     top: 60px;
@@ -94,3 +110,4 @@
     color: #002b5c;
   }
 }
+

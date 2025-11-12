@@ -44,19 +44,17 @@ export default function DefencePolicy() {
 
           <div className={styles.rightColumn}>
             <p>
-              Explore global defence policies, international partnerships, and
-              innovations driving security advancements.
-            </p>
-            <p>
-              Our coverage highlights the balance between diplomacy, technology,
+               Our coverage highlights the balance between diplomacy, technology,
               and power shaping the world future.
-            </p>
-                        <p>
               Explore global defence policies, international partnerships, and
+              innovations driving security advancements. Our coverage highlights the balance between diplomacy, technology,
+              and power shaping the world future.Explore global defence policies, international partnerships, and
               innovations driving security advancements.
             </p>
             <p>
               Our coverage highlights the balance between diplomacy, technology,
+              and power shaping the world future. Explore global defence policies, international partnerships, and
+              innovations driving security advancements.   Our coverage highlights the balance between diplomacy, technology,
               and power shaping the world future.
             </p>
           </div>

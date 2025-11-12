@@ -10,7 +10,13 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>MyWebsite</div>
+      <div className={styles.logo}>
+        <img
+          src="/images/logo.png"  // <-- put your logo image inside public/images/
+          alt="Website Logo"
+          className={styles.logoImage}
+        />
+      </div>
 
       <div className={styles.hamburger} onClick={toggleMenu}>
         <div className={`${styles.bar} ${isOpen ? styles.open : ""}`}></div>
@@ -27,4 +33,3 @@ export default function Navbar() {
     </nav>
   );
 }
-    
