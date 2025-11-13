@@ -37,20 +37,18 @@ export default function FutureOf() {
 
         <div className={styles.columns}>
           <div className={styles.leftColumn}>
-                        <p>
-              Explore global defence policies, international partnerships, and
-              innovations driving security advancements.
-            </p>
             <p>
-              Our coverage highlights the balance between diplomacy, technology,
+               Our coverage highlights the balance between diplomacy, technology,
               and power shaping the world future.
-            </p>
-            <p>
               Explore global defence policies, international partnerships, and
+              innovations driving security advancements. Our coverage highlights the balance between diplomacy, technology,
+              and power shaping the world future.Explore global defence policies, international partnerships, and
               innovations driving security advancements.
             </p>
             <p>
               Our coverage highlights the balance between diplomacy, technology,
+              and power shaping the world future. Explore global defence policies, international partnerships, and
+              innovations driving security advancements.   Our coverage highlights the balance between diplomacy, technology,
               and power shaping the world future.
             </p>
             {/* Optional image */}
