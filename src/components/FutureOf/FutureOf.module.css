@@ -1,4 +1,5 @@
 .section {
+  border-top: 3px solid #f9d342;
   position: relative;
   background-image: url("/images/Future-tech.jpg");
   background-size: cover;
